@@ -1,7 +1,7 @@
 ## 奇怪的东东 ##
 
 .toArray : convert to Array
-    java.util.Collection    →  $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"[] $VAR:suggestVariableName()$ = $expr$.toArray(new $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[$expr$.size()]);\
+    java.util.Collection    →  $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[] $VAR:suggestVariableName()$ = $expr$.toArray(new $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[$expr$.size()]);\
     $END$\
 
 
