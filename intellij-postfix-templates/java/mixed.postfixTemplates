@@ -1,10 +1,10 @@
 ## 尚未归类 ##
 
 .toArray : convert to Array
-	java.util.Collection → $expr$.toArray(new $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[$expr$.size()])
+    java.util.Collection → $expr$.toArray(new $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[$expr$.size()])
 
 .toCharset : convert to Charset
-	java.lang.String     → java.nio.charset.Charset.forName($expr$)
+    java.lang.String     → java.nio.charset.Charset.forName($expr$)
 
 .uuid : Generate UUID
     ANY                  → java.util.UUID.randomUUID().toString()
