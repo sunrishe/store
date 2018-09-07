@@ -1,7 +1,7 @@
 ## 奇怪的东东 ##
 .toList : convert to List
-	ARRAY                   →  java.util.Arrays.asList($expr$)
-	java.util.Collection    →  new java.util.ArrayList<>($expr$)
+    ARRAY                   →  java.util.Arrays.asList($expr$)
+    java.util.Collection    →  new java.util.ArrayList<>($expr$)
 
 .toCharset : convert to Charset
     java.lang.String        →  java.nio.charset.Charset.forName($expr$)
