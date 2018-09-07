@@ -1,9 +1,0 @@
-## 奇怪的东东 ##
-
-.toArray : convert to Array
-    java.util.Collection    →  $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[] $expr$Array = $expr$.toArray(new $ELEMENT_TYPE:iterableComponentType(expr):"java.lang.Object"$[$expr$.size()]);\
-    $END$\
-
-
-.toCharset : convert to Charset
-    java.lang.String        →  java.nio.charset.Charset.forName($expr$)
